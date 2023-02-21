@@ -1,0 +1,169 @@
+.section{
+    min-height: 100vh;
+    display: block;
+    padding: 50px 30px;
+    opacity: 1;
+}
+.cont{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.section .cont{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;margin-left: 10px;
+    max-width: 100%;margin-bottom: 20px;
+}
+.section-title h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.about .about-content{
+    flex:0 0 100%;
+    max-width: 100%;padding-bottom: 15px;
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;padding-left: 15px;
+    max-width: 100%;
+}
+.about .about-content .about-text p{
+    font-size: 20px;
+}
+.about .about-content .personal-info{
+    flex: 0 0 100%;padding-left: 15px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;padding-left: 15px;
+    max-width: 50%;padding-right: 15px;
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px;font-size: 18px;
+    border-bottom: 1px;
+  
+    border-bottom: 1px solid #e8dfec;
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;font-size: 16px;
+    margin-left: 4px;display: inline-block;
+}
+.resbtn{
+    margin-top: 30px;padding-left: 15px;
+}
+.about .about-content .education{
+    flex: 0 0 100%;
+    max-width: 100%;padding-left: 15px;
+    margin-top: 30px;
+}
+.about .about-content .timeline-box{
+    flex: 0 0 100%;
+    width: 100%;display: flex;justify-content: center;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.about .about-content .timeline{
+    padding: 30px 15px;
+    border-bottom: 1px solid #e8dfec;
+    border-radius: 10px;width: max-content;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;padding-bottom: 50px;  
+}
+.about .about-content .timeline .timeline-item:last-child{
+   padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before{
+    content:'';
+    width: 1px;position: absolute;height: 100%;
+    left: 7px; top: 0;background-color: #ec1839;
+ }
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;top: 0;
+    height: 15px;width: 15px;
+    border-radius: 50%;background-color: #ec1839;
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.about .about-content .timeline .timeline-date .bi-calendar-fill{
+    margin-right: 5px ;
+}
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.about .about-content .timeline .timeline-text{
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media (max-width:768px) {
+    .section{
+        padding: 0;
+    }
+    .about .about-content .about-text p{
+        font-size: 16px;
+    }
+    .section-title h2{
+        font-size: 6vw;margin-top: 10px;
+    }
+    .about .about-content{
+        padding-bottom: 8px;
+    }
+    .about .about-content .personal-info .info-item{
+        flex: 0 0 100%;padding-left: 10px;
+        max-width: 100%;padding-right: 10px;
+    }
+    .about .about-content .personal-info .info-item p{
+        padding: 8px;font-size: 16px;
+    }
+    .about .about-content .personal-info .info-item p span{
+        font-size: 14px;
+        margin-left: 2px;
+    }
+    .resbtn{
+        margin-top: 20px;margin-left: 15px;
+    }
+    .about .about-content .education{
+        margin-top: 15px;
+    }
+    .about .about-content .timeline{
+        padding: 20px 10px;
+    }
+    .about .about-content .timeline .timeline-item{
+        position: relative;
+        padding-left: 25px;padding-bottom: 26px;  
+    }
+    .about .about-content .timeline .timeline-item::before{
+        left: 6px;
+     }
+    .about .about-content .timeline .circle-dot{
+        height: 12px;width: 12px;
+    }
+    .about .about-content .timeline .timeline-date{
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .about .about-content .timeline .timeline-title{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .about .about-content .timeline .timeline-text{
+        font-size: 14px;
+        text-align: justify;
+    }
+  }

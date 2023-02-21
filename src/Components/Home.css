@@ -1,0 +1,92 @@
+:root{
+    --cyan:#00ffff;
+    --gray:rgb(173,173,170);
+}
+.icons-container{
+    position: fixed;bottom: 0;
+}
+.icons{
+    list-style-type: none;
+}
+.icons li{
+    margin: 5px 0px;
+}
+.icons::after{
+    content:'';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 12px;
+    background-color: var(--gray);
+}
+.email-container{
+    position: fixed;bottom:0;right: 10px;
+}
+.email-container p{
+    color:var(--gray);
+    writing-mode: vertical-lr;
+}
+.email-container p::after{
+    content:'';
+    display:inline-block;
+    width: 1px;
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 3px;
+    background-color: var(--gray);
+}
+.homecont{
+    height:600px
+}
+main{
+    margin-top: 70px;margin-left: 120px;
+}
+main .hi_name{
+  margin: 0;font-weight: 500;font-size: 2vw;
+}
+main h2{
+    font-size: 4vw;
+}
+main .detail{
+    font-size: 20px;max-width: 600px;
+}
+main button{
+    
+    padding: 5px;
+    border-radius: 3px;
+}
+main h1{
+    font-size: 5vw;font-weight: 600;
+}
+main button:hover{
+    background-color: rgb(165, 215, 218)!important;
+}
+
+@media only screen and (max-width:768px) {
+    .icons-container,.email-container{
+        display: none;
+    }
+    main{
+        margin-top: 60px;margin-left: 10px;margin-right:0;
+    }
+    main h2{
+        font-size: 5vw;
+    }
+    main h1{
+        font-size: 5vw;
+    }
+    main .detail{
+        font-size: 16px;
+    }
+    main .hi_name{
+        margin: 0;font-weight: 500;font-size: 4vw;
+    }
+    main button{
+        padding: 3px;font-size: medium;
+    }
+    .homecont{
+        height: min-content;padding-bottom: 30px;
+    }
+  
+}

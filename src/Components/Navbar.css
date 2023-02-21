@@ -1,0 +1,74 @@
+.navibar{
+    display: flex;width: 100%;flex-wrap: wrap;background-image: linear-gradient(to right,#ddd6f3,#faaca8);
+    padding: px;align-items: center;justify-content: space-between;
+  }
+  .navbtns{
+    display: flex;
+  }
+  .navbtns div{
+    padding: 10px;margin-right: 5px;font-size: 22px;
+    font-family:sans-serif;letter-spacing:3px ;font-weight: 500;
+  }
+  .navbtns div {
+    cursor: pointer;
+  }
+  .navbtns div:hover{
+    scale: 1.05; transition: 0.3s;
+  }
+  .nb{
+    text-decoration: none;color: black; 
+  }
+  
+  .brand{
+    font-size:30px;font-family: "Monoton";letter-spacing: 2px;
+    animation: anim 7s linear infinite;margin-left: 20px;
+  }
+  .nav-toggler div{
+    width: 30px;
+    height: 3px;margin: 6.4px;background-color: darkgray;
+  }
+  .nav-toggler{
+    display: none;
+  }
+  @media (max-width:768px) {
+    .nav-toggler{
+      display: block;position: fixed;right: 10px;
+    }
+    .navbtns{
+      flex-direction: column;position: fixed;top:85px;right: 0;
+      width: 100%;transform: scale(0);transition: 0.3s;text-align: center;
+      background: rgba(255, 255, 255, 0.34);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  .nav-active{
+    transform: scale(1)
+  }
+  
+  .toggle .l1{
+    transform: rotate(-45deg) translate(-4px,9px);transition: 0.4s;
+  }
+  .toggle .l2{
+    opacity: 0;
+  }
+  .toggle .l3{
+    transform: rotate(45deg) translate(-4px,-9px);transition: 0.4s ;
+  }
+  
+  
+  @keyframes anim {
+    0%   {color:violet; }
+    14%  {color:indigo; }
+    28%  {color:blue; }
+    42%  {color:green; }
+    56%  {color:rgb(255, 255, 149); }
+    70% {color:orange; }
+    84% {color:red; }
+    100% {color:violet; }
+  }
+  
+  

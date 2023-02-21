@@ -1,0 +1,90 @@
+.contact{
+    height: 600px;
+}
+.contact-items{
+    display: flex;justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.contact-info-item{
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+.contact-info-item .bi{
+    font-size: 25px;
+}
+.contact-info-item h4{
+    font-size:18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.contact-info-item p{
+    font-size:16px;
+    font-weight: 400;
+}
+.contact-title{
+    text-align: center;
+}
+.contact .contact-form .form-item .form-control{
+    border-radius: 20px;transition: all 0.3s ease;border: 1px solid rgba(0,0,0,0.5);
+    padding: 10px 25px;margin: 15px;background: transparent;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.contact .contact-form .form-item textarea{
+    height: 140px;
+}
+.contact-form,.rowb{
+    margin-right: 10px;
+}
+.contact .contact-form .btn{
+    margin-left: 15px; border-radius: 20px;padding: 10px 25px;margin-top: 15px;
+}
+.form-item{
+    text-align: center;
+}
+@media (max-width:768px) {
+    .contact-info-item .bi{
+        font-size: 20px;
+    }
+    .contact-info-item h4{
+        font-size:15px;
+    }
+    .contact-info-item p{
+        font-size:14px;
+    }
+    .contact-title{
+        font-size: 18px;
+    }
+    .contact .contact-form .form-item .form-control{
+        border-radius: 20px;transition: all 0.3s ease;
+        padding: 8px 20px;margin: 10px;
+    }
+    .contact .contact-form .btn{
+        padding: 8px 20px;margin-top: 10px;
+    }
+    .form-item{
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .contact-info-item .bi{
+        font-size: 18px;
+    }
+    .contact-info-item h4{
+        font-size:14px;
+    }
+    .contact-info-item p{
+        font-size:13px;
+    }
+    .contact-title{
+        font-size: 16px;
+    }
+    .contact .contact-form .form-item .form-control{
+        border-radius: 20px;
+        padding: 6px 18px;margin: 8px;
+    }
+    .contact .contact-form .btn{
+        padding: 6px 18px;
+    }
+}
